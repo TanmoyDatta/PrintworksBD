@@ -14,9 +14,6 @@ public class LoginPage extends BasePage{
 		writeTextOnElement(Password,password);
 		clickOnElement(RememberMe);
 		clickOnElement(Login_BTN);
-		Thread.sleep(50000);
-		
+		Thread.sleep(50000);	
 	}
-	
-
 }

@@ -18,6 +18,7 @@ public class AfterLoginHome extends BasePage {
 		actions.clickAndHold(manu).build().perform();
 		Thread.sleep(2000);
 		fiction.click();
+		
 		WebElement Next = getElement(NextPage);
 		actions.moveToElement(Next).build().perform();
 		Thread.sleep(2000);

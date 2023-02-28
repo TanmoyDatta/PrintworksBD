@@ -24,10 +24,10 @@ public class TestCase extends DriverSetUp{
 	@Test
 	public void AllTest() throws InterruptedException {
 		getDriver().get(homePage.Home_URL);
-//		homePage.clickOnElement(homePage.Login);
-//		Thread.sleep(3000);
-//		loginPage.dologin("tanmoycse3@gmail.com","pass123#");
-//		accountPage.home_Button();
+		homePage.clickOnElement(homePage.Login);
+		Thread.sleep(3000);
+		loginPage.dologin("tanmoycse3@gmail.com","pass123#");
+		accountPage.home_Button();
 		afterLoginHome.scrollMenu();
 		nextAndViewBookPage.ViewBook();
 		addToCart.ADD_TO_CART();
