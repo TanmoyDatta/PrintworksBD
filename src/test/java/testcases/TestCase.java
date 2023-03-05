@@ -1,5 +1,7 @@
 package testcases;
 
+import static org.testng.Assert.assertEquals;
+
 import org.testng.annotations.Test;
 
 import pages.AddToCart;
@@ -24,7 +26,11 @@ public class TestCase extends DriverSetUp{
 	@Test
 	public void AllTest() throws InterruptedException {
 		getDriver().get(homePage.Home_URL);
+		assertEquals(homePage.Home_Title, homePage.Home_Title);
+		assertEquals(homePage.LoginBTN_Title, homePage.LoginBTN_Title);
 		homePage.clickOnElement(homePage.Login);
+		assertEquals(loginPage.Login_Title,"My Account - Printworks BD");
+		
 		Thread.sleep(3000);
 		loginPage.dologin("tanmoycse3@gmail.com","pass123#");
 		accountPage.home_Button();

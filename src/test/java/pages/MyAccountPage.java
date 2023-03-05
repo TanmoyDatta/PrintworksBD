@@ -8,7 +8,6 @@ public class MyAccountPage extends BasePage{
 	
 	public void home_Button() throws InterruptedException {
 		clickOnElement(Home_BTN);
-		Thread.sleep(5000);
 	}
 
 }

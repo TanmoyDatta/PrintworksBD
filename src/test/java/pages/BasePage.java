@@ -37,9 +37,8 @@ public class BasePage {
 			
 		}
 		// wait driver wait               
-		public List<WebElement> getVisibleElements(By locator) {
+		public WebElement getVisibleElements(By locator) {
 			WebDriverWait wait = new WebDriverWait(getDriver(),Duration.ofSeconds(30));
-			return wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
+			return wait.until(ExpectedConditions.elementToBeClickable(locator));
 		}
-
 }
