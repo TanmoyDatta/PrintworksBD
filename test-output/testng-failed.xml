@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="2" parallel="tests" name="Test(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="testcases.TestCase">
         <methods>
-          <include name="ADDTOCART"/>
-          <include name="OrderPlace"/>
-          <include name="NextPage"/>
           <include name="quitBrowser"/>
-          <include name="AfterLogInHomePages"/>
+          <include name="HomePage"/>
           <include name="setBrowser"/>
         </methods>
       </class> <!-- testcases.TestCase -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

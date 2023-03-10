@@ -38,10 +38,7 @@ public class BasePage {
 			getElement(locator).sendKeys(text);
 			
 		}
-		// take screenshot
-		public void takeScreenShot(String name) {
-			Allure.addAttachment(name, new ByteArrayInputStream(((TakesScreenshot)getDriver()).getScreenshotAs(OutputType.BYTES) ));
-		}
+		
 		// wait driver wait               
 		public WebElement getVisibleElements(By locator) {
 			WebDriverWait wait = new WebDriverWait(getDriver(),Duration.ofSeconds(30));

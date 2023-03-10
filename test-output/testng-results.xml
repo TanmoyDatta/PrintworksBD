@@ -1,61 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="6" total="7" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-10T14:42:09 BDT" name="Suite" finished-at="2023-03-10T14:43:40 BDT" duration-ms="91372">
+  <suite started-at="2023-03-10T17:44:47 BDT" name="Default suite" finished-at="2023-03-10T17:44:47 BDT" duration-ms="93">
     <groups>
     </groups>
-    <test started-at="2023-03-10T14:42:09 BDT" name="Test" finished-at="2023-03-10T14:43:40 BDT" duration-ms="91372">
+    <test started-at="2023-03-10T17:44:47 BDT" name="Default test" finished-at="2023-03-10T17:44:47 BDT" duration-ms="93">
       <class name="testcases.TestCase">
-        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.TestCase@6cc558c6]" started-at="2023-03-10T14:42:09 BDT" name="setBrowser" finished-at="2023-03-10T14:42:14 BDT" duration-ms="4815" status="PASS">
+        <test-method is-config="true" signature="setBrowser()[pri:0, instance:testcases.TestCase@8576fa0]" started-at="2023-03-10T17:44:41 BDT" name="setBrowser" finished-at="2023-03-10T17:44:47 BDT" duration-ms="5269" status="FAIL">
+          <exception class="org.openqa.selenium.remote.http.ConnectionFailedException">
+            <message>
+              <![CDATA[Unable to establish websocket connection to http://localhost:2647/devtools/browser/5982d8ab-4847-4a11-a5e5-065d10623ded
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:2647/devtools/browser/5982d8ab-4847-4a11-a5e5-065d10623ded
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+at org.openqa.selenium.devtools.Connection.<init>(Connection.java:78)
+at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+at java.base/java.util.Optional.map(Optional.java:260)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:50)
+at utilities.DriverSetUp.getBrowser(DriverSetUp.java:34)
+at utilities.DriverSetUp.setBrowser(DriverSetUp.java:46)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:376)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.http.ConnectionFailedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBrowser -->
-        <test-method signature="HomePage()[pri:0, instance:testcases.TestCase@6cc558c6]" started-at="2023-03-10T14:42:14 BDT" name="HomePage" description="Visit this site and show the Homepages" finished-at="2023-03-10T14:42:20 BDT" duration-ms="6019" status="PASS">
+        <test-method signature="HomePage()[pri:0, instance:testcases.TestCase@8576fa0]" started-at="2023-03-10T17:44:47 BDT" name="HomePage" description="Visit this site and show the Homepages" finished-at="2023-03-10T17:44:47 BDT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.remote.http.ConnectionFailedException">
+            <message>
+              <![CDATA[Unable to establish websocket connection to http://localhost:2647/devtools/browser/5982d8ab-4847-4a11-a5e5-065d10623ded
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:2647/devtools/browser/5982d8ab-4847-4a11-a5e5-065d10623ded
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+at org.openqa.selenium.devtools.Connection.<init>(Connection.java:78)
+at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+at java.base/java.util.Optional.map(Optional.java:260)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:50)
+at utilities.DriverSetUp.getBrowser(DriverSetUp.java:34)
+at utilities.DriverSetUp.setBrowser(DriverSetUp.java:46)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:376)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.http.ConnectionFailedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HomePage -->
-        <test-method signature="LoginPage()[pri:1, instance:testcases.TestCase@6cc558c6]" started-at="2023-03-10T14:42:20 BDT" name="LoginPage" description="Click on the Login pages" finished-at="2023-03-10T14:42:25 BDT" duration-ms="5047" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginPage -->
-        <test-method signature="testLogInValidCredentialsUsingDataprovider(java.lang.String,java.lang.String)[pri:2, instance:testcases.TestCase@6cc558c6]" started-at="2023-03-10T14:42:25 BDT" name="testLogInValidCredentialsUsingDataprovider" description="Enter a valid email and valid password in LogIn pages" data-provider="ValidCredensial" finished-at="2023-03-10T14:42:38 BDT" duration-ms="13047" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[tanmoycse3@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[pass123#]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLogInValidCredentialsUsingDataprovider -->
-        <test-method signature="AfterLogInHomePages()[pri:3, instance:testcases.TestCase@6cc558c6]" started-at="2023-03-10T14:42:38 BDT" name="AfterLogInHomePages" description="Hover Story Book and click on the Friction" finished-at="2023-03-10T14:42:55 BDT" duration-ms="17133" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterLogInHomePages -->
-        <test-method signature="NextPage()[pri:4, instance:testcases.TestCase@6cc558c6]" started-at="2023-03-10T14:42:55 BDT" name="NextPage" description="Scroll Down And Go to the Next Page" finished-at="2023-03-10T14:43:04 BDT" duration-ms="8683" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- NextPage -->
-        <test-method signature="ADDTOCART()[pri:5, instance:testcases.TestCase@6cc558c6]" started-at="2023-03-10T14:43:04 BDT" name="ADDTOCART" description="View any book, Add to Cart And Hover Cart Icon and Click Checkout" finished-at="2023-03-10T14:43:13 BDT" duration-ms="9571" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ADDTOCART -->
-        <test-method signature="OrderPlace()[pri:6, instance:testcases.TestCase@6cc558c6]" started-at="2023-03-10T14:43:13 BDT" name="OrderPlace" description="Provide all information on this page And Place Order" finished-at="2023-03-10T14:43:40 BDT" duration-ms="26267" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OrderPlace -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:testcases.TestCase@6cc558c6]" started-at="2023-03-10T14:43:40 BDT" name="quitBrowser" finished-at="2023-03-10T14:43:40 BDT" duration-ms="450" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:testcases.TestCase@8576fa0]" started-at="2023-03-10T17:44:47 BDT" name="quitBrowser" finished-at="2023-03-10T17:44:47 BDT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
       </class> <!-- testcases.TestCase -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

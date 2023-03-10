@@ -6,7 +6,7 @@
       <class name="testcases.TestCase">
         <methods>
           <include name="quitBrowser"/>
-          <include name="AfterLogInHomePages"/>
+          <include name="HomePage"/>
           <include name="setBrowser"/>
         </methods>
       </class> <!-- testcases.TestCase -->
