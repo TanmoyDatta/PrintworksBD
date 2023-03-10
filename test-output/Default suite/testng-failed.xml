@@ -5,8 +5,8 @@
     <classes>
       <class name="testcases.TestCase">
         <methods>
-          <include name="AllTest"/>
           <include name="quitBrowser"/>
+          <include name="AfterLogInHomePages"/>
           <include name="setBrowser"/>
         </methods>
       </class> <!-- testcases.TestCase -->

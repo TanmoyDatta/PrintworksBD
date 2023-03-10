@@ -9,7 +9,7 @@ public class AfterLoginHome extends BasePage {
 	public By StroyBook = By.xpath("//li[@id='nav-menu-item-720']//a[normalize-space()='Story Books']");
 	public By Fiction = By.cssSelector("li[id='nav-menu-item-2584'] a");
 	public By NextPage = By.xpath("//div[@class='shop-loop-after clearfix']//a[@class='next page-numbers']");
-	
+	public String Fiction_Title = "Fiction & Fantasy Archives - Printworks BD";
 	public void scrollMenu() throws InterruptedException {
 		
 		WebElement manu = getElement(StroyBook);

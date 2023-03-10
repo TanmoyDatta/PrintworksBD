@@ -9,23 +9,23 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 
 public class DriverSetUp {
-	private static String browserName = System.getProperty("browser","Chrome"); // console a user driver select kore dibe. , select na korle by default chrome browser open hobe
+	private static String browserName = System.getProperty("browser","chrome"); 
 	
-	private static final ThreadLocal<WebDriver> LOCAL_DRIVER = new ThreadLocal(); // localDriver nam a akta variable nilam
-	// localDriver k set korar jonno method likhte hobe , and get korar jonno akta method likhte hobe
-	// isolate kora holo ata
-	// LOCAL_DRIVER er set method
+	private static final ThreadLocal<WebDriver> LOCAL_DRIVER = new ThreadLocal(); 
 	
-	public static void setDriver(WebDriver driver) { // set method , set method korte (WebDriver driver) nite hobe/  [void thakle return kore na]
-		DriverSetUp.LOCAL_DRIVER.set(driver); // localDriver er variable  er moddhe driver ta assgin kore dibo / set kore dilam
+	
+	public static void setDriver(WebDriver driver) { 
+		DriverSetUp.LOCAL_DRIVER.set(driver);
 	}
-	// LOCAL_DRIVER er get method
+	// LOCAL_DRIVER get method
 	public static WebDriver getDriver() {
-		return LOCAL_DRIVER.get(); // localDriver ta get korlam
+		return LOCAL_DRIVER.get(); 
 	}
 	
 	public static WebDriver getBrowser(String browserName) {

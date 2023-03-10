@@ -13,6 +13,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import io.qameta.allure.Allure;
+
 
 public class BasePage {
 	
@@ -35,6 +37,10 @@ public class BasePage {
 		public void writeTextOnElement(By locator, String text) {
 			getElement(locator).sendKeys(text);
 			
+		}
+		// take screenshot
+		public void takeScreenShot(String name) {
+			Allure.addAttachment(name, new ByteArrayInputStream(((TakesScreenshot)getDriver()).getScreenshotAs(OutputType.BYTES) ));
 		}
 		// wait driver wait               
 		public WebElement getVisibleElements(By locator) {

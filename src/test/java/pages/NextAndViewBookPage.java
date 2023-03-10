@@ -11,7 +11,7 @@ public class NextAndViewBookPage extends BasePage{
 	public By SelectBook = By.xpath("//*[@id=\"content\"]/div[2]/div/ul/li[9]/div[1]/a/div[2]/img");
 	
 	public void ViewBook() throws InterruptedException {
-		WebElement Book = getElement(SelectBook);		
+		WebElement Book = getElement(SelectBook);	
 		JavascriptExecutor js = (JavascriptExecutor)getDriver();
 		js.executeScript("arguments[0].scrollIntoView();",Book);
 		Thread.sleep(2000);
